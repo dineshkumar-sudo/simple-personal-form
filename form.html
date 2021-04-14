@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    *{
+        font-family: sans-serif;
+    }
+    form{
+        margin : 50px 0 0 400px;
+    }
+
+    fieldset{
+        width : 50%;
+        text-align: center;
+    }
+    
+</style>
+<body>
+    <form action=""  method="POST">
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" placeholder="Firstname" name="fname" autofocus required><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="LastName" name="lname" required><br><br>
+            <label for="dob">Date-of-birth:</label>
+            <input type="date" id="dob" ><br><br>
+            <label for="time">Time of registration:</label>
+            <input type="time" id="time"><br><br>
+            <label for="mail">Mail id:</label>
+            <input type="mail" id="mail"><br><br>
+            <label for="phno">Phone number :</label>
+            <input type="text"><br><br>
+            <label for="Gender">Gender :</label>
+            <input type="radio" id="Gender">Male
+            <input type="radio" id="Gender">Female
+            <br><br>
+            <label for="position">Position:</label>
+            <input list="position" name="position">
+            <datalist id="position">
+                <option value="swd" selected></option>
+                <option value="jt"></option>
+                <option value="tl"></option>
+                <option value="intern"></option>
+                <option value="manager"></option>
+            </datalist><br><br>
+            <label for="resume">Resume : </label>
+            <input type="file" multiple>  <br><br>
+            <label for="feedback">Feedback</label>
+            <input type="textarea" row="5" column="15"><br><br>
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+</body>
+</html>
